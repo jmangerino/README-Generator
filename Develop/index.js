@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
+const fileName = 'README.md';
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -38,7 +39,7 @@ const questions = [
     {
         type: 'list',
         message: 'Please pick a license for your project',
-        name: license,
+        name: 'license',
         choices: [
             "MIT",
             "Apache 2.0",
