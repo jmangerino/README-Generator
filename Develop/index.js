@@ -38,6 +38,7 @@ const questions = [
     {
         type: 'list',
         message: 'Please pick a license for your project',
+        name: license,
         choices: [
             "MIT",
             "Apache 2.0",
